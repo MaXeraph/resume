@@ -10,4 +10,4 @@ The Creator created this template as managing a resume on Google Docs was hard a
 
 ### License
 Format is MIT but all the data is owned by Sourabh Bajaj.
-# MaXeraph.github.io
+
