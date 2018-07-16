@@ -4,5 +4,5 @@ pdflatex max_resume.tex
 latexmk -c
 convert  -verbose  -density 150  -trim  max_resume.pdf -quality 100 -flatten -sharpen 0x1.0 resume_preview.png
 echo "Remember to push it up"
-echo " "
 echo "Done"
+echo " "
