@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -68,14 +68,25 @@
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% No personal projects -- this is a huge red flag that you can't program, add some github links & key points about your projects
 
+% Semi-irrelevant work experience -- lots of people have done highschool jobs, you probably only need one of those three listed, use the rest for demonstrations of your ability to program (e.g., even 207 project is better than office assistant)
+
+% Extra-Curriculars are good, too many words in that section, it should be bullets
+
+% Verb tense is weird, use action words "I restructured and grew the club to more than 20 participating members." is an accomplishment that is easier to digest than a wall of text
+
+% "Arduino's C" is weird, just put "C"
+% "LaTeX" is not a programming language
+% "Unix command line" is weird, you probably want "Linux administration experience" or something along those lines
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://resume.maxeraph.tech}{\Large Max Pham}} & Email : \href{mailto:max.pham@mail.utoronto.ca}{max.pham@mail.utoronto.ca}\\
-  \href{https://resume.maxeraph.tech}{https://resume.maxeraph.tech} & Mobile : +1 (647) 674-7967 \\
+  \textbf{\Large Max Pham} & Address: 906-608 Richmond Street West\\
+  \textbf{Portfolio:} \href{https://resume.maxeraph.tech}{https://resume.maxeraph.tech} & Toronto, ON M5V 0N9\\
+  \textbf{Email} : \href{mailto:max.pham@mail.utoronto.ca}{max.pham@mail.utoronto.ca} & Mobile : +1 (647) 674-7967\\
 \end{tabular*}
 
 
@@ -83,25 +94,43 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Univerisity of Toronto}{Toronto, ON}
-      {Specialist in Mathematics and Statistics, Minor in Computer Science}{Sep. 2017 -- May. 2021}
-      \resumeItemListStart
-        \resumeItem{In-progress Courses}
-          {Software Design;
-          Intro to Theory of Computation;
-          Linear Algebra II;
-          Probability and Statistics I;
-          Multivariable Calculus;
-          Software Tools and Systems Programming;
-          Data Structures and Analysis}
-        \resumeItem{Completed Courses}
-          {Intro to Computer Programming(92\%);
-          Intro to Computer Science(86\%);
-          Linear Algebra I(81\%);
-          Mathematical Expression and Reasoning for Computer Science(78\%)}
-      \resumeItemListEnd
+      {University of Toronto}{Toronto, ON}
+      {Mathematics Specialist with Applications in Statistics, Minor in Computer Science}{Sep. 2017 -- May. 2021}
   \resumeSubHeadingListEnd
 
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, Java, Bash, C}
+     \hfill
+     \textbf{Technologies}{: Unix, MS Office, Git, JetBrains' IDEs, Windows, MacOS}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Game Center [Java]}{University of Toronto}
+      {Backend Developer, Unit Tester, Gameplay Tester}{Sep 2018 - Dec 2018}
+      \resumeItemListStart
+        \resumeItem{General}
+        {An Android app that serves as a digital distribution mobile games platform. Users can interact with available games and compete with other players.}
+        \resumeItem{Main Task}
+          {Utilized and implemented Google's FireBase Cloud Storage. Designed and implemented an Authorization system in compliance to basic security protocols.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {uToronto RESTful API [Python + SQLite3]}{Side Project}
+      {Creator}{Jan 2019 (On-going)}
+      \resumeItemListStart
+        \resumeItem{General}
+          {A quick ultility to search up course information at University of Toronto}
+        \resumeItem{Main Task}
+          {Generated database with SQLite3 through Python. Utilized BeautifulSoup module to collect and parse data for POST, GET look ups.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -117,28 +146,18 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Magee Secondary School}{Vancouver, BC}
-      {Office Assistant}{Sep 2015 - Jun 2017}
-      \resumeItemListStart
-        \resumeItem{General}
-          {Provided excellent customer service to all needs. Being the first point of contact for school’s visitors, guaranteed to deliver efficient solutions in a timely manner.}
-        \resumeItem{Main Task}
-          {Diligently responsible in handling the school telephone line, while providing quick and precise information for incoming inquiries. Key volunteer organizing school events, including admission processes and supporting with on-call logistical correspondent.}
-      \resumeItemListEnd
-
-    \resumeSubheading
       {PC Galore}{Vancouver, BC}
       {Assistant}{May 2016}
       \resumeItemListStart
         \resumeItem{General}
           {Selected by the Vancouver School Board for the program. Worked under staff’s guidance in different parts of the store. Mainly dealt with laptops, desktops and their components, successfully restored and refurbished them to their resalable values.}
         \resumeItem{Main Task}
-          {Conducted inventory management, quality check warranting excellent functionalities for parts and systems. Developed a fluent skill in working with both hardware and software.}
+          {Conducted inventory management, quality check warranting excellent functionality for parts and systems. Developed a fluent skill in working with both hardware and software.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
+%-----------Extra-C Activities-----------------
 \section{Extra-Curricular Activities}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -146,11 +165,11 @@
       {Co-founder, Back-end Developer}{Sep 2016 - May 2017}
       \resumeItemListStart
         \resumeItem{General}
-          {Restructured the club from being abandoned 2 years ago to its updated form with more than 20 members participated in its recent revival. Recycled desktops, collected by the sponsor teacher, resulted in the availability of 5 UNIX-based desktops with sufficient specifications for developments within 2 months.}
+        {A fresh and unique science club where students can learn and creates their own autonomous machines. Taught by fellow students and teacher, members also explore and explore Machine Learning in their designs.}
         \resumeItem{Main Task}
-          {Acted as co-lead in back-end development of a self-driving 3d-printed car and a quadruped walking spider from scratch. With rapid expansion and popularity, the club was sponsored our first and very own 3d-printer, which was a 10-hour collaboration from every member of the club to build from its bolts.}
+          {Restructured the club from the ground up to its updated form with more than 20 members participating. Negotiated and recycled desktops from teachers that were deemed "broken". Acted as co-lead in back-end development of a self-driving 3d-printed car and a quadruped walking spider. Instructed members in basic wiring, soldering, coding and training for 3d-printer.}
         \resumeItem{Current State}
-          {While most of its original founders have graduated, the Autonomous Robotics Club (ARC) is now one of the most popular and one of the very few intuitively engaging clubs at the school, with its current phase is to train the car to be able to drive on its own in custom tracks.}
+          {While most of its original founders have graduated, the Autonomous Robotics Club (ARC) is now one of the most popular applied science club at school, with its current phase is to train the car to be able to drive on its own in custom tracks. With rapid expansion and popularity, the club was sponsored our first and very own 3d-printer, which was a 10-hour collaboration from every member of the club to build from its bolts.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -158,22 +177,13 @@
       {President}{Sep 2016 - May 2017}
       \resumeItemListStart
         \resumeItem{General}
-          {Became President of the club in grade 12. Made collaborations with Table-top club and the official support from the UBC eSports Association, a well-known collegiate gaming society from the University of British Columbia. Helped carried out a spring break tournament for members from high schools in the Vancouver area to participate.}
-        \resumeItem{Main Task}
-          {Acted as executive staff in the club in grade 11. Helped organizing events for members. Most noticeably, the League of Legends Worlds 2016 Viewing Party had 30 participants, both members and non-members.}
+          {The one and only gaming club in school where we celebrate and take part in the social group of gamers. Where we all come together and share the joy of gaming.}
+        \resumeItem{Main Tasks}
+          {Became President of the club. Initiated collaborations with Table-top club and the official support from the UBC eSports Association. Helped carried out a spring break tournament for members from high schools in the Vancouver area to participate. Most noticeably, the League of Legends Worlds 2016 Viewing Party had 30 participants, both members and non-members.}
+        \resumeItem{Current State}
+          {Still one of the best clubs in Magee, more and more consoles and accessible computers are being added to the club to make sure everyone can play.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-
-% --------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Python, Java, Bash, Arduino's C, \LaTeX}
-     \hfill
-     \textbf{Technologies}{: Unix Command Line, MS Office, Git}
-   }
- \resumeSubHeadingListEnd
-
-%-------------------------------------------
+ % -------------------------------------
 \end{document}
