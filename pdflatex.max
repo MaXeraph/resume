@@ -1,5 +1,4 @@
 #!/bin/bash
-cd ~/Repos/resume
 echo "Generating PDF file from .tex"
 pdflatex max_resume.tex
 latexmk -c
