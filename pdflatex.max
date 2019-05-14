@@ -1,8 +1,11 @@
 #!/bin/bash
 echo "Generating PDF file from .tex"
-pdflatex max_resume.tex
-latexmk -c
-convert  -verbose  -density 150  -trim  max_resume.pdf -quality 100 -flatten -sharpen 0x1.0 resume_preview.png
+pdflatex max_resume.tex >/dev/null
+latexmk -c >/dev/null
+echo "Repo's resume"
+cp max_resume.pdf ../MaXeraph.github.io
+# convert  -verbose  -density 150  -trim  max_resume.pdf -quality 100 -flatten -sharpen 0x1.0 resume_preview.png
 echo "Remember to push it up"
+echo " "
 echo "Done"
 echo " "

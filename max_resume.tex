@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,10.8pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -45,7 +45,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{#2 \vspace{-2pt}}
   }
 }
 
@@ -64,7 +64,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,16 +87,18 @@
   \textbf{\Large Max Pham} & Address: 906-608 Richmond Street West\\
   \textbf{Portfolio:} \href{https://maxpham.dev/}{\underline{https://maxpham.dev}}
  & Toronto, ON M5V 0N9\\
-  \textbf{Email} : \href{mailto:max.pham@mail.utoronto.ca}{\underline{max.pham@mail.utoronto.ca}} & Mobile : +1 (647) 674-7967\\
+  \textbf{Email} : \href{mailto:max.pham@mail.utoronto.ca}{\underline{max.pham@mail.utoronto.ca}} \\
+  % & Mobile: +1 (647) 674-7967
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Toronto}{Toronto, ON}
-      {Mathematics Major + Minor in Computer Science and Physics}{Sep. 2017 -- May. 2021}
+        {University of Toronto}{}
+        {Mathematics Major + Minor in Computer Science and Classical Civilization}{Sep. 2017 -- May. 2021}
   \resumeSubHeadingListEnd
+
 
 % --------PROGRAMMING SKILLS------------
 \section{Programming Skills}
@@ -104,55 +106,56 @@
    \item{
      \textbf{Languages}{: Python, Java, Bash, C}
      \hfill
-     \textbf{Technologies}{: RESTful, Google Vision, Unix, Git, SQLite3, Windows/MacOS}
+     \textbf{Technologies}{: RESTful, Requests, Unix, Git, Windows/MacOS}
    }
  \resumeSubHeadingListEnd
 
 %-----------Projects-----------------
-\section{Projects}
+\section{Relevant Projects}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Game Center [Java]}{University of Toronto}
-      {Backend Developer, Unit Tester, Gameplay Tester $|$ Achieved LetterGrade A (Model Solution)}{Sep 2018 - Dec 2018}
+        {Game Center [Java]}{}
+        {Back-end Developer, Unit Tester, Gameplay Tester $|$ Achieved Grade: A (Model Solution)}{Sep 2018 - Dec 2018}
       \resumeItemListStart
-        \resumeItem{General}
-        {An Android app that serves as a digital distribution mobile games platform. Users can interact with available games and compete with other players. Received an A letter grade (model solution) in the course.}
-        \resumeItem{Main Task}
-          {Utilized and implemented Google's FireBase Cloud Storage. Designed and implemented an Authorization system in compliance to basic security protocols (Passwords encrypted with SHA-256). Helped design and implement 2048 Game to library.}
+        \resumeItem{}
+            {Utilizing Google's FireBase Cloud Storage Framework to design and implement an Authorization system to support multi-user logins. As well as, corresponding on-the-cloud saves for each user's progress. Secured user login information security in compliance to SHA-256 encryption, guaranteeing privacy between users and developers.}
+
+        \resumeItem{}
+            {Helped design and implement 2048 game to library.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {\href{https://feedme.maxpham.dev/}{\underline{feed.me}} [Python + Java]}{NewHacks @ University of Toronto}
+      {\href{https://feedme.maxpham.dev/}{\underline{feed.me}} [Python + Java]}{}
       {Developer + Project Manager $|$ Placed 2nd in Sustainability Category.}{March 2019}
       \resumeItemListStart
-        \resumeItem{General}
-          {The user can take a photo of their produce or grocery receipts to add to their inventory of produce. The app then recommends recipes to the user based on their preferences.}
-        \resumeItem{Main Task}
-          {Incorporated MongoDB with RESTful, deployed on Heroku as a service. Applied Google Vision in Image Recognition to create query to Food2Fork's API to get recipes.}
-        \resumeItem{Current Development}
-        {Integrating Google Home/Alexa. Training a more specific and focused ML model with PyTorch. OpenCV for Real-Time Recognition. iOS support.}
+        \resumeItem{}
+            {Implemented RESTful service for GET, POST commands from the App to server. Incorporated MongoDB as the database framework to store and generate corresponding recipes.}
+        \resumeItem{}
+            {Applied Google Vision and Food2Fork API to recognize groceries and receipts to query recipes and keep database updated.}
+        \resumeItem{Current Development : }
+            {Integrating Google Home/Alexa. Training a more specific and focused ML model with PyTorch. OpenCV for Real-Time Recognition. iOS support.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Other Experiences}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {FPT Information Systems}{Ho Chi Minh City, VN}
+      {FPT Information Systems}{}
       {Summer Intern}{June 2018 - July 2018}
       \resumeItemListStart
-        \resumeItem{General}
-          {Primary Dashboard designer; Utilized Microsoft Office tools to present note-worthy components from Client’s businesses to assist with the decision-making process.}
-        \resumeItem{Main Task}
-          {Conducted Quality Assurance tasks to verify the utmost accuracy in documentations for dashboards and their supporting calculations.}
+        \resumeItem{}
+            {Conducted Quality Assurance tasks to verify the utmost accuracy in documentations for dashboards and their supporting calculations.}
+        \resumeItem{}
+            {Primary Dashboard designer, utilized Microsoft Office tools to present crucial components from Client’s business to assist with the decision-making process.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Kinka Food - Kinton Ramen}{Toronto, ON}
-      {Kitchen Staff | Part-time}{January 2019 - On Going}
+      {Kinton Ramen}{}
+      {Kitchen Staff | Part-time}{January 2019 - On-Going}
       \resumeItemListStart
-        \resumeItem{Main Task}
-          {Responsible for cooking side dishes. Ensuring all workspaces are meeting the FOODSAFE Green requirement. }
+        \resumeItem{}
+            {Responsible for assisting ramen masters. Ensuring workplace is meeting the FOODSAFE Green requirement.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -174,24 +177,24 @@
       {Autonomous Robotics Club}{Magee Secondary School}
       {Co-founder, Back-end Developer}{Sep 2016 - May 2017}
       \resumeItemListStart
-        \resumeItem{General}
-        {A fresh and unique science club where students can learn and creates their own autonomous machines. Taught by fellow students and teacher, members also explore and explore Machine Learning in their designs.}
-        \resumeItem{Main Task}
-          {Restructured the club from the ground up to its updated form with more than 20 recurring members participating. Negotiated and recycled "broken" computers. Co-lead in back-end development of a self-driving 3d-printed car and a quadruped walking spider. Instructed members in basic wiring, soldering, coding and training for 3d-printer.}
-        \resumeItem{Current State}
-          {ARC is now one of the most popular applied science club at school, with its current phase is to train the car to be able to drive on its own in custom tracks. With rapid expansion and popularity, the school sponsored us a 3d-Printer, which was a 10-hour collaboration from every member of the club to build from its bolts.}
+        \resumeItem{}
+            {Originally non-operational, the club was revived and restructured from the ground up to its updated form with more than 20 recurring members participation. Negotiated and recycled broken computers from teachers to create a fleet of UNIX-based development desktops for members to learn and develop. }
+        \resumeItem{}
+            {Co-lead in back-end development and vehicle design of a self-driving 3d-printed car and a quadruped spider. Instructed members in basic wiring, soldering, coding (C\#) and safety training for 3d-printer.}
+        \resumeItem{Current State : }
+            {ARC is now one of the most popular applied science club at school, with its current phase is to train multiple cars to race in obstacle-filled map. With rapid expansion and popularity, the club was sponsored a 3d-Printer given by the generous donation by the school, which was a 10-hour collaboration from every member of the club to build from its bolts.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Magee e-Sports Club}{Magee Secondary School}
       {President}{Sep 2016 - May 2017}
       \resumeItemListStart
-        \resumeItem{General}
-          {The one and only gaming club in school where we celebrate and take part in the social group of gamers. Where we all come together and share the joy of gaming.}
-        \resumeItem{Main Tasks}
-          {Initiated collaborations with Table-top club and the official support from the UBC eSports Association. Helped carried out a spring break tournament for members from high schools in the Vancouver area to participate. Most noticeably, the League of Legends Worlds 2016 Viewing Party had 30 participants, both members and non-members.}
-        \resumeItem{Current State}
-          {One of the fastest growing clubs, with more consoles and gaming-ready computers are being added to the club to ensure everyone can have a good time.}
+        \resumeItem{}
+            {Organized weekly SmashBros meetups as well as viewing parties for gaming enthusiasts.}
+        \resumeItem{}
+            {Initiated collaborations with Table-top club and the official support from the UBC eSports Association. Helped carried out a spring break tournament for members from high schools in the Vancouver area to participate. Most noticeably, the League of Legends Worlds 2016 Viewing Party had 30 participants, both members and non-members.}
+        \resumeItem{Current State : }
+            {One of the fastest growing clubs, with more consoles and game-ready computers are being added to the club to ensure everyone can have a good time.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
