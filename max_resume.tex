@@ -68,16 +68,26 @@
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% No personal projects -- this is a huge red flag that you can't program, add some github links & key points about your projects
+
 % Semi-irrelevant work experience -- lots of people have done highschool jobs, you probably only need one of those three listed, use the rest for demonstrations of your ability to program (e.g., even 207 project is better than office assistant)
+
+% Extra-Curriculars are good, too many words in that section, it should be bullets
+
+% Verb tense is weird, use action words "I restructured and grew the club to more than 20 participating members." is an accomplishment that is easier to digest than a wall of text
+
+% "Arduino's C" is weird, just put "C"
+% "LaTeX" is not a programming language
+% "Unix command line" is weird, you probably want "Linux administration experience" or something along those lines
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Max Pham} & Address: 906-608 Richmond Street West\\
-  \textbf{Portfolio:} \href{https://maxpham.dev/}{\underline{https://maxpham.dev}}
- & Toronto, ON M5V 0N9\\
-  \textbf{Email} : \href{mailto:max.pham@mail.utoronto.ca}{\underline{max.pham@mail.utoronto.ca}} \\
+  \textbf{\Large Max Pham} & \textbf{Email} : \href{mailto:max.pham@mail.utoronto.ca}{\underline{max.pham@mail.utoronto.ca}}  \\
+   \textbf{Address:} 906-608 Richmond Street West
+ & \textbf{Github:} \href{https://github.com/MaXeraph}{\underline{https://github.com/MaXeraph}}\\
+   Toronto, ON M5V 0N9 & \textbf{Portfolio:} \href{https://maxpham.dev/}{\underline{https://maxpham.dev}}\\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -86,6 +96,10 @@
     \resumeSubheading
         {University of Toronto}{}
         {Computer Science Specialist | Focus in Computer Systems}{Sep. 2017 -- May. 2021}
+      \resumeItemListStart
+          \resumeItem{}
+            {\textbf{In-progress:} Computer Organization, Introduction to Software Engineering, Programming on the Web, Software Testing and Verification, Introduction to Databases, Operating Systems, Algorithm Design, Analysis \& Complexity, Principles of Programming Languages}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -93,9 +107,9 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, Java, Bash, C}
+     \textbf{Languages:}{ Python, Java, C, Haskell, Dafny, Verilog}
      \hfill
-     \textbf{Technologies}{: RESTful, Requests, Unix, Git, Windows/MacOS}
+     \textbf{Technologies:}{ RESTful, Unix, Git, Flask, SQLite, Heroku}
    }
  \resumeSubHeadingListEnd
 
@@ -121,55 +135,64 @@
             {Implemented RESTful service for GET, POST commands from the App to server. Incorporated MongoDB as the database framework to store and generate corresponding recipes.}
         \resumeItem{}
             {Applied Google Vision and Food2Fork API to recognize groceries and receipts to query recipes and keep database updated.}
-        \resumeItem{Current Development : }
+        \resumeItem{Current Development: }
             {Integrating Google Home/Alexa. Training a more specific and focused ML model with PyTorch. OpenCV for Real-Time Recognition. iOS support.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://unzucc.maxpham.dev}{\underline{unZucc.me}} [Python + HTML + CSS]}{}
+      {Hackathon Project @ Citizen Hacks}{March 2019}
+      \resumeItemListStart
+        \resumeItem{}
+            {Utilized AGEITGEY's facial recognition \href{https://github.com/ageitgey/face_recognition/}{\underline{API}} model to locate faces. Applied masking of random Gaussian noise on top with Numpy and CV2 libraries. Designed and locally deployed the app through Flask.}
+        \resumeItem{Current Development: }
+            {Fully deploy app on Heroku. Training home-made facial recognition and GAN models. Support realtime masking.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://api.maxpham.dev}{\underline{uToronto API}} [Python's Flask + SQLite]}{}
+      {Side Project}{March 2019}
+      \resumeItemListStart
+        \resumeItem{}
+            {Designed and deployed the API on Heroku. Adhering to RESTful principle for future open-source applications. Data collected from University of Toronto \href{https://fas.calendar.utoronto.ca/}{\underline{Calendar}} and converted into SQLite database. Back-end architecture supported by Flask.}
+        \resumeItem{Current Development: }
+            {Creating front-end interfaces (website, browser extensions) for a more user friendly environment. Adding support for Programs @UofT and other schools. Systematically update database on an annual basis.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%-----------EXPERIENCE-----------------
-\section{Other Experiences}
-  \resumeSubHeadingListStart
+% %-----------EXPERIENCE-----------------
+% \section{Other Experiences}
+%   \resumeSubHeadingListStart
 
-  \resumeSubheading
-    {Apple Inc.}{Eaton Centre, Toronto}
-    {Operations Specialist}{July 2019 - On-Going}
-    \resumeItemListStart
-      \resumeItem{}
-          {Responsible for maintenance and fulfilling of inventory, as well as updating teams on the status of products and parts. Entrusted with the task to receive  new products and present them to the entire store team.}
-    \resumeItemListEnd
+%   \resumeSubheading
+%     {Apple Inc.}{Eaton Centre, Toronto}
+%     {Operations Specialist}{July 2019 - On-Going}
+%     \resumeItemListStart
+%       \resumeItem{}
+%           {Responsible for maintenance and fulfilling of inventory, as well as updating teams on the status of products and parts. Entrusted with the task to recieve new products and present them to the entire store team.}
+%     \resumeItemListEnd
 
-  \resumeSubheading
-    {Kinton Ramen}{}
-    {Kitchen Staff}{January 2019 - June 2019}
-    \resumeItemListStart
-        \resumeItem{}
-          {Partook in preparing and making side-dishes as well as ramen. Took both assisting and leading roles in the kitchen.}
-        \resumeItem{}
-          {Trained new staffs in dishwashing tasks and closing procedures.}
-    \resumeItemListEnd
+%   \resumeSubheading
+%     {Kinton Ramen}{}
+%     {Kitchen Staff}{January 2019 - June 2019}
+%     \resumeItemListStart
+%         \resumeItem{}
+%           {Partook in preparing and making side-dishes as well as ramen. Took both assisting and leading roles in the kitchen.}
+%         \resumeItem{}
+%           {Trained new staffs in dishwashing tasks and closing procedures.}
+%     \resumeItemListEnd
 
-    \resumeSubheading
-      {FPT Information Systems}{}
-      {Summer Intern}{June 2018 - July 2018}
-      \resumeItemListStart
-        \resumeItem{}
-            {Conducted quality assurance tasks to verify the utmost accuracy in documentations for dashboards and their supporting calculations.}
-        \resumeItem{}
-            {Primary dashboard designer, utilized Microsoft Office tools to present crucial components from client’s business to assist with the decision-making process.}
-      \resumeItemListEnd
+%     \resumeSubheading
+%       {FPT Information Systems}{}
+%       {Summer Intern}{June 2018 - July 2018}
+%       \resumeItemListStart
+%         \resumeItem{}
+%             {Conducted quality assurance tasks to verify the utmost accuracy in documentations for dashboards and their supporting calculations.}
+%         \resumeItem{}
+%             {Primary dashboard designer, utilized Microsoft Office tools to present crucial components from client’s business to assist with the decision-making process.}
+%       \resumeItemListEnd
 
-
-
-    % \resumeSubheading
-    %   {PC Galore}{Vancouver, BC}
-    %   {Assistant}{May 2016}
-    %   \resumeItemListStart
-    %     \resumeItem{General}
-    %       {Selected by the Vancouver School Board for the program. Worked under staff’s guidance in different parts of the store. Mainly dealt with laptops, desktops and their components, successfully restored and refurbished them to their resalable values.}
-    %     \resumeItem{Main Task}
-    %       {Conducted inventory management, quality check warranting excellent functionality for parts and systems. Developed a fluent skill in working with both hardware and software.}
-    %   \resumeItemListEnd
-  \resumeSubHeadingListEnd
+%   \resumeSubHeadingListEnd
 
 
 %-----------Extra-C Activities-----------------
@@ -195,9 +218,7 @@
             {Organized weekly SmashBros meetups as well as viewing parties for gaming enthusiasts.}
         \resumeItem{}
             {Initiated collaborations with Table-top club and the official support from the UBC eSports Association. Helped carried out a spring break tournament for members from high schools in the Vancouver area to participate. Most noticeably, the League of Legends Worlds 2016 Viewing Party had 30 participants, both members and non-members.}
-        % \resumeItem{Current State : }
-        %     {One of the fastest growing clubs, with more consoles and game-ready computers are being added to the club to ensure everyone can have a good time.}
-      \resumeItemListEnd
+        \resumeItemListEnd
     \resumeSubHeadingListEnd
 
  % -------------------------------------
