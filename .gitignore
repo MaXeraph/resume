@@ -1,2 +1,4 @@
 # Archieve
 Archieve/
+*.gz
+._.DS_Store
