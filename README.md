@@ -16,4 +16,4 @@ The Creator created this template as managing a resume on Google Docs was hard a
 ![Resume Screenshot](/resume_preview.png)
 
 ## License
-Format is MIT but the template was created by Sourabh Bajaj.
+Creator: Sourabh Bajaj with MIT license.
